@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин терминалов спутниковой связи</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+
+    <header class="w3-container w3-teal w3-center">
+        <h1>Терминалы спутниковой связи</h1>
+        <nav class="w3-bar w3-light-grey">
+            <a href="#home" class="w3-bar-item w3-button">Главная</a>
+            <a href="#models" class="w3-bar-item w3-button">Модели</a>
+            <a href="#about" class="w3-bar-item w3-button">О нас</a>
+            <a href="#contact" class="w3-bar-item w3-button">Контакты</a>
+        </nav>
+    </header>
+
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+        <div class="w3-quarter">
+            <i class="fa fa-certificate w3-margin-bottom w3-jumbo w3-center"></i>
+            <p class="w3-large">Надежность</p>
+            <p>Проверенное оборудование для любых условий</p>
+        </div>
+        <div class="w3-quarter">
+            <i class="fa fa-globe w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Глобальное покрытие</p>
+            <p>Связь в любой точке мира</p>
+        </div>
+        <div class="w3-quarter">
+            <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Простота настройки</p>
+            <p>Быстрое развертывание за 10-15 минут</p>
+        </div>
+        <div class="w3-quarter">
+            <i class="fa fa-life-ring w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Поддержка</p>
+            <p>Круглосуточная техническая поддержка</p>
+        </div>
+    </div>
+
+    <div class="w3-container w3-padding-32" id="models">
+        <h2 class="w3-center">Представленные модели</h2>
+        <p class="w3-center w3-large">Выберите подходящий терминал</p>
+
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <!-- Модель 1 -->
+            <div class="w3-col l4 m6 w3-margin-bottom">
+                <div class="w3-card w3-hover-shadow model-card" onclick="window.location.href='snark-100.html'"
+                    style="height:100%;display:flex;flex-direction:column;">
+                    <div style="height:200px;overflow:hidden;">
+                        <img src="images/snark-100.png" alt="Терминал СНАРК-100"
+                            style="width:100%;height:100%;object-fit:contain;">
+                    </div>
+                    <div class="w3-container" style="flex:1;display:flex;flex-direction:column; padding-bottom: 10px;">
+                        <div>
+                            <h3><b>СНАРК-100</b></h3>
+                            <p class="w3-opacity">Портативный терминал Ku-диапазона</p>
+                            <p>Диаметр антенны 1 метр. Быстрое развертывание за 10-15 минут одним человеком. Компактная
+                                упаковка для транспортировки.</p>
+                        </div>
+                        <div style="margin-top:auto;">
+                            <button class="w3-button w3-light-grey w3-block"><i class="fa fa-info-circle"></i>
+                                Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Модель 2 -->
+            <div class="w3-col l4 m6 w3-margin-bottom">
+                <div class="w3-card w3-hover-shadow model-card" onclick="window.location.href='sk-rm.html'"
+                    style="height:100%;display:flex;flex-direction:column;">
+                    <div style="height:200px;overflow:hidden;">
+                        <img src="images/sk-rm.png" alt="Терминал СК-РМ"
+                            style="width:100%;height:100%;object-fit:contain;">
+                    </div>
+                    <div class="w3-container" style="flex:1;display:flex;flex-direction:column; padding-bottom: 10px;">
+                        <div>
+                            <h3><b>СК-РМ</b></h3>
+                            <p class="w3-opacity">Мобильная спутниковая станция</p>
+                            <p>Профессиональное решение для мобильной связи. Автоматическое наведение на спутник.
+                                Поддержка
+                                высокоскоростной передачи данных.</p>
+                        </div>
+                        <div style="margin-top:auto;">
+                            <button class="w3-button w3-light-grey w3-block"><i class="fa fa-info-circle"></i>
+                                Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Модель 3 -->
+            <div class="w3-col l4 m6 w3-margin-bottom">
+                <div class="w3-card w3-hover-shadow model-card" onclick="window.location.href='starlink.html'"
+                    style="height:100%;display:flex;flex-direction:column;">
+                    <div style="height:200px;overflow:hidden;">
+                        <img src="images/starlink-pro.jpg" alt="Терминал Starlink Pro"
+                            style="width:100%;height:100%;object-fit:contain;">
+                    </div>
+                    <div class="w3-container" style="flex:1;display:flex;flex-direction:column; padding-bottom: 10px;">
+                        <div>
+                            <h3><b>Starlink Pro</b></h3>
+                            <p class="w3-opacity">Спутниковый интернет терминал</p>
+                            <p>Высокоскоростной доступ в интернет через спутниковую сеть. Простая установка и настройка.
+                                Стабильное соединение в любых условиях.</p>
+                        </div>
+                        <div style="margin-top:auto;">
+                            <button class="w3-button w3-light-grey w3-block"><i class="fa fa-info-circle"></i>
+                                Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-container w3-light-grey w3-padding-32" id="about">
+        <div class="w3-content">
+            <h2 class="w3-center">О нашей компании</h2>
+            <p class="w3-center w3-large">Мы - лидеры на рынке спутниковой связи</p>
+            <div class="w3-row-padding" style="margin-top:64px">
+                <div class="w3-col l6 m6">
+                    <p>Наша компания специализируется на поставках профессионального оборудования спутниковой связи уже
+                        более 15 лет. Мы работаем с ведущими производителями и предлагаем только проверенные решения.
+                    </p>
+                    <p>Наши специалисты помогут подобрать оборудование, оптимально соответствующее вашим задачам, и
+                        обеспечат полную техническую поддержку на всех этапах эксплуатации.</p>
+                </div>
+                <div class="w3-col l6 m6">
+                    <div class="w3-panel w3-card w3-white">
+                        <p><i class="fa fa-check-circle w3-text-teal"></i> <b>Гарантия качества</b> - все оборудование
+                            проходит предпродажную проверку</p>
+                        <p><i class="fa fa-check-circle w3-text-teal"></i> <b>Обучение</b> - проводим обучение персонала
+                            работе с оборудованием</p>
+                        <p><i class="fa fa-check-circle w3-text-teal"></i> <b>Сервис</b> - собственный сервисный центр с
+                            оригинальными запчастями</p>
+                        <p><i class="fa fa-check-circle w3-text-teal"></i> <b>Доставка</b> - оперативная доставка по
+                            всей России и СНГ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w3-container w3-teal w3-padding-32" id="contact">
+        <div class="w3-content">
+            <h2 class="w3-center">Контакты</h2>
+            <div class="w3-row-padding" style="margin-top:32px">
+                <div class="w3-col l4 m6">
+                    <p><i class="fa fa-map-marker w3-text-white"></i> Москва, ул. Спутниковая, д. 15</p>
+                    <p><i class="fa fa-phone w3-text-white"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fa fa-envelope w3-text-white"></i> info@satlink.ru</p>
+                </div>
+                <div class="w3-col l4 m6">
+                    <p><i class="fa fa-clock w3-text-white"></i> Пн-Пт: 9:00 - 18:00</p>
+                    <p><i class="fa fa-clock w3-text-white"></i> Сб: 10:00 - 15:00</p>
+                    <p><i class="fa fa-clock w3-text-white"></i> Вс: выходной</p>
+                </div>
+                <div class="w3-col l4 m12">
+                    <p>Подпишитесь на наши новости:</p>
+                    <input class="w3-input w3-border" type="text" placeholder="Ваш email">
+                    <button class="w3-button w3-black w3-margin-top">Подписаться</button>
+                </div>
+            </div>
+            <div class="w3-center w3-padding-24" style="margin-top:32px">
+                <p>&copy; 2025 Магазин терминалов спутниковой связи. Все права защищены.</p>
+                <div class="w3-xlarge w3-section">
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    <i class="fa fa-instagram w3-hover-opacity"></i>
+                    <i class="fa fa-youtube w3-hover-opacity"></i>
+                    <i class="fa fa-telegram w3-hover-opacity"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

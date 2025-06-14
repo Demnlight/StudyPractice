@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СК-РМ - Мобильная спутниковая станция | SatLink</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .tech-specs {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .order-panel {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #009688;
+        }
+
+        .complectation {
+            border-left: 4px solid #009688;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="w3-container w3-teal">
+        <div class="w3-bar" style="align-items: center;justify-content: center;display: flex;">
+            <a href="index.html" class="w3-bar-item w3-button">На главную</a>
+            <h1 class="w3-bar-item">СК-РМ: Мобильная спутниковая станция</h1>
+        </div>
+    </header>
+
+    <div class="w3-container w3-padding-32">
+        <div class="w3-row">
+            <!-- Левая колонка - изображения -->
+            <div class="w3-col m6">
+                <div class="w3-display-container">
+                    <img src="images/sk-rm.png" alt="СК-РМ - основное изображение" class="w3-image w3-border">
+                    <div class="w3-row-padding w3-margin-top">
+                        <div class="w3-col s4">
+                            <img src="images/sk-rm.png" alt="СК-РМ в развернутом состоянии" style="width:100%"
+                                class="w3-hover-opacity w3-border" onclick="openImage(this)">
+                        </div>
+                        <div class="w3-col s4">
+                            <img src="images/sk-rm.png" alt="Компоненты системы" style="width:100%"
+                                class="w3-hover-opacity w3-border" onclick="openImage(this)">
+                        </div>
+                        <div class="w3-col s4">
+                            <img src="images/sk-rm.png" alt="СК-РМ в транспортировочном кейсе" style="width:100%"
+                                class="w3-hover-opacity w3-border" onclick="openImage(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Правая колонка - заказ и описание -->
+            <div class="w3-col m6 w3-padding-large">
+                <div class="order-panel">
+                    <h2 class="w3-text-teal">349 900 ₽</h2>
+                    <p class="w3-text-grey">В наличии: 5 шт.</p>
+
+
+                    <div class="w3-section">
+                        <label>Количество:</label>
+                        <input class="w3-input w3-border" type="number" value="1" min="1" max="5" style="width:100px">
+                    </div>
+
+                    <div class="w3-section">
+                        <label>Комплект:</label>
+                        <select class="w3-select w3-border">
+                            <option value="base">Базовая комплектация</option>
+                            <option value="extended">Расширенная (+ антенна 1.2м)</option>
+                            <option value="full">Полная (+ ЗИП и кейс)</option>
+                        </select>
+                    </div>
+
+                    <button class="w3-button w3-teal w3-block w3-padding" type="button">
+                        <i class="fa fa-cart-plus"></i> Добавить в заказ
+                    </button>
+
+                    <div class="w3-panel w3-pale-green w3-leftbar w3-border-green w3-margin-top">
+                        <p><i class="fa fa-truck"></i> Доставка по РФ - 3-5 дней</p>
+                        <p><i class="fa fa-shield-alt"></i> Гарантия 24 месяца</p>
+                    </div>
+
+
+                    <div class="complectation w3-margin-top">
+                        <h3><i class="fa fa-cube feature-icon"></i>Комплектация:</h3>
+                        <ul>
+                            <li>Базовый блок терминала</li>
+                            <li>Антенна 0.9м с креплением</li>
+                            <li>Блок питания 220В/24В</li>
+                            <li>Кабельный комплект (10м)</li>
+                            <li>Руководство пользователя</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container w3-padding-32">
+            <h2 class="w3-border-bottom w3-border-light-grey">Ключевые особенности</h2>
+            <div class="tech-specs w3-margin-top">
+                <ul class="w3-ul">
+                    <li>Автоматическое наведение на спутник</li>
+                    <li>Защищенный корпус IP67</li>
+                    <li>Поддержка VoIP и видеосвязи</li>
+                    <li>Встроенный аккумулятор (до 8 часов работы)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Детальное описание -->
+        <div class="w3-container w3-padding-32">
+            <h2 class="w3-border-bottom w3-border-light-grey">Технические характеристики</h2>
+
+            <div class="w3-responsive">
+                <table class="specs-table w3-table-all">
+                    <colgroup>
+                        <col style="width:30%">
+                        <col style="width:70%">
+                    </colgroup>
+                    <tr>
+                        <td><strong>Диапазон частот</strong></td>
+                        <td>Ku-диапазон (14.0-14.5 ГГц TX, 10.7-12.75 ГГц RX)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Диаметр антенны</strong></td>
+                        <td>0.9 метра</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Скорость передачи</strong></td>
+                        <td>До 20 Мбит/с на прием, до 8 Мбит/с на передачу</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Мощность передатчика</strong></td>
+                        <td>5 Вт (встроенный BUC)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Габариты (сложено)</strong></td>
+                        <td>600×450×300 мм</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Вес комплекта</strong></td>
+                        <td>22 кг</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Рабочая температура</strong></td>
+                        <td>-40°C до +55°C</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Питание</strong></td>
+                        <td>220 В / 24 В (встроенный аккумулятор 8 часов работы)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Интерфейсы</strong></td>
+                        <td>2×RJ45 (Gigabit Ethernet), 2×USB 3.0, RS-232</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="w3-panel w3-light-grey w3-padding-16 w3-margin-top">
+                <h3><i class="fa fa-play-circle feature-icon"></i>Видеообзор системы:</h3>
+                <div class="w3-container w3-center">
+                    <div class="w3-embed" style="max-width:600px;margin:auto">
+                        <!-- Замените на реальное видео -->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EXAMPLE" frameborder="0"
+                            allowfullscreen class="w3-image"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w3-container w3-teal w3-center w3-padding-16">
+        <p>© 2023 SatLink | Телефон: +7 (495) 765-43-21 | email: sales@satlink.ru</p>
+    </footer>
+
+    <script>
+        function openImage(img) {
+            window.open(img.src, "_blank");
+        }
+    </script>
+</body>
+
+</html>

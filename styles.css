@@ -1,0 +1,20 @@
+.model-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.model-card {
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.model-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 600px) {
+    .model-image {
+        height: 150px;
+    }
+}
